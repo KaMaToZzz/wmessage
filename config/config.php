@@ -1,12 +1,18 @@
 <?php
-/**
- * Конфиг
- */
+/*-------------------------------------------------------
+*
+*   Plugin "Wmessage"
+*   Author: Vladimir Rybalko (kamatozzz)
+*   Site: livestreet.ru/profile/kamatozzz/
+*   Contact e-mail: kamatozzz1@gmail.com
+*
+---------------------------------------------------------
+*/
 
 $config = array();
 
-$config['in']=true; // Выводить true. Не выводить false.
-$config['message'] = 'Вывод важного сообщения.'; // Сообщение, которое будет выводиться  
+$config['in']=true;
+$config['message'] = 'Вывод важного сообщения.';
 
 return $config;
 ?>

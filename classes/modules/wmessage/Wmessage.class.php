@@ -1,5 +1,13 @@
 <?php
-
+/*-------------------------------------------------------
+*
+*   Plugin "Wmessage"
+*   Author: Vladimir Rybalko (kamatozzz)
+*   Site: livestreet.ru/profile/kamatozzz/
+*   Contact e-mail: kamatozzz1@gmail.com
+*
+---------------------------------------------------------
+*/
 class PluginWmessage_ModuleWmessage extends ModuleORM {
 
  	protected $oMapper;
@@ -7,7 +15,7 @@ class PluginWmessage_ModuleWmessage extends ModuleORM {
 	public function Init()
     {
         parent::Init();
-        $this->oMapper=Engine::GetMapper(__CLASS__);
+       $this->oMapper=Engine::GetMapper(__CLASS__);
     }
 	
   public function GetTemplateFilePath($sPluginClass,$sFileName)

@@ -1,5 +1,13 @@
 <?php
-
+/*-------------------------------------------------------
+*
+*   Plugin "Wmessage"
+*   Author: Vladimir Rybalko (kamatozzz)
+*   Site: livestreet.ru/profile/kamatozzz/
+*   Contact e-mail: kamatozzz1@gmail.com
+*
+---------------------------------------------------------
+*/
 class PluginWmessage_HookWmessage extends Hook {
 
     public function RegisterHook() {

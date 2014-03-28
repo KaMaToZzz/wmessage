@@ -11,7 +11,7 @@ Wmessage — плагин для вывода важного сообщения 
 
 После активации плагин необходимо добавить хук для вашего шаблона:
 
-В header.tpl после <code><section id="container" class="{hook run='container_class'}"></code> и перед <code><div id="wrapper" class="container {hook run='wrapper_class'}"></code> <strong>необходимо вставить</strong>:
+В header.tpl после <code>section id="container" class="{hook run='container_class'}"</code> и перед <code>div id="wrapper" class="container {hook run='wrapper_class'}"</code> <strong>необходимо вставить</strong>:
 
 <code>{hook run='wmessage'}</code>
 

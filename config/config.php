@@ -3,7 +3,8 @@
 *
 *   Plugin "Wmessage"
 *   Author: Vladimir Rybalko (kamatozzz)
-*   Site: livestreet.ru/profile/kamatozzz/
+*   Site: http://job.livestreetcms.com/profile/KaMaToZzz/
+	skype: kammatozzz
 *   Contact e-mail: kamatozzz1@gmail.com
 *
 ---------------------------------------------------------

@@ -2,8 +2,9 @@
 	margin: 10px 0;
 }
 .warning {
+   width: 90%;
    padding: 20px;
-   margin: 10px 5px;
+   margin: 10px 5%;
    background: #ff0030;
    color: #fff;
    font-size: 18px;

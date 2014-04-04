@@ -14,17 +14,26 @@ class PluginWmessage_HookWmessage extends Hook {
     public function RegisterHook() {
 	     $this->AddHook('template_wmessage', 'InjectWmessage');
     }
-	
-/* 	public function InjectWmessage($aParam)
-    {
-		if (Config::Get('plugin.wmessage.in')){
-			return $this->Viewer_Fetch($this->PluginWmessage_Wmessage_GetTemplateFilePath(__CLASS__, 'inject_wmessage.tpl'));
-		}
-		return false;
-    } */
-	
+		
 	public function InjectWmessage() {
-		return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'inject_wmessage.tpl');
+		if (!in_array(Router::GetAction(), Config::Get('plugin.wmessage.wpage'))) {
+		return false;
+		}
+		$oUserCurrent = $this->User_GetUserCurrent();
+			switch(Config::Get('plugin.wmessage.show_type')) {
+			  case 'registered':
+				if ($oUserCurrent) {
+				  return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'registered.tpl');
+				}
+				break;
+			  case 'guest':
+				if (!$oUserCurrent) {
+				  return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'guest.tpl');
+				}
+				break;
+			  default:
+				return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__).'all.tpl');
+			}
 	}
 }
 ?>

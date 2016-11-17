@@ -2,21 +2,21 @@
 <plugin>
     <name>
         <lang name="default">Wmessage</lang>
-        <lang name="russian">Wmessage</lang>
+        <lang name="ru">Wmessage</lang>
     </name>
     <author>
-        <lang name="default">author</lang>
-        <lang name="russian">KaMaToZzz</lang>
+        <lang name="default">KaMaToZzz</lang>
+        <lang name="ru">Рыбалко Владимир</lang>
     </author>
-    <homepage>http://job.livestreetcms.com/profile/KaMaToZzz/</homepage>
-    <version>1.0.4</version>
+    <homepage>http://livestreet.ru</homepage>
+    <version>1.9.5</version>
     <requires>
-        <livestreet>1.0.3</livestreet>
+        <livestreet>2.0</livestreet>
         <plugins>
         </plugins>
     </requires>
     <description>
-        <lang name="default">Description of plugin Wmessage</lang>
-        <lang name="russian">вывод важного сообщения для оповещения пользователей</lang>
+        <lang name="default">Attencion message for LS</lang>
+        <lang name="ru">Важное сообщение от администрации</lang>
     </description>
 </plugin>

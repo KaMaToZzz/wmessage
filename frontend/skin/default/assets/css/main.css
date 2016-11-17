@@ -1,0 +1,45 @@
+/*-------------------------------------------------------
+*
+*   Plugin "Wmessage"
+*   Author: Vladimir Rybalko (kamatozzz)
+*   Site: http://job.livestreetcms.com/profile/KaMaToZzz/
+*   skype: kammatozzz
+*   Contact e-mail: kamatozzz1@gmail.com
+*   Ver: 1.9.5
+*
+---------------------------------------------------------
+*/
+.place {
+   min-width: 320px;
+   max-width: 1100px;
+   margin: 0 auto 32px;
+   background: #fff;
+   padding: 15px 5px 15px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   position: relative;
+   box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+}
+
+.wmessage {
+   padding-left: 25px;
+}
+
+.wmessage-text {
+   font-size: 20px;
+   color: red;
+}
+
+.wmessage.closed .wmessage-title { margin-bottom: 0; }
+.wmessage.closed p { display: none;}
+.oldie .wmessage { border: 1px solid #eee; }
+.page-header.wmessage-title { margin-bottom: 25px; }
+.wmessage-close {
+      position: absolute;
+      top: 21px;
+      right: 25px;
+      font-size: 11px;
+      line-height: 1.3em;
+      color: #878e96;
+   }

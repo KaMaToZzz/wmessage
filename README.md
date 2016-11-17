@@ -1,13 +1,13 @@
-Wmessage — plugin fow warning user on site based LiveStreet CMS v1.0.3.
-Plugin v1.0.4
+Wmessage — plugin fow warning user on site based LiveStreet CMS v2.0
+Plugin v1.9.5
 
 Wmessage — плагин для вывода важного сообщения всем пользователям и гостям сайта.
 
 Текст сообщения добавляется в конфиге плагина /plugins/wmessage/config/config.php в $config['message']
 
-После активации плагин необходимо добавить хук для вашего шаблона:
+После активации плагин необходимо добавить хук для вашего шаблона (на примере шаблона synio):
 
-В header.tpl после <code>section id="container" class="{hook run='container_class'}"</code> и перед <code>div id="wrapper" class="container {hook run='wrapper_class'}"</code> <strong>необходимо вставить</strong>:
+В header.tpl после закрывающего тега </nav> (навигационной панели. 84 строка шаблона) и перед <div id="container" ....> (открывающимся тегом основного контейнера шаблона) <strong>необходимо вставить</strong>:
 
 <code>{hook run='wmessage'}</code>
 
